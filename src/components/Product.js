@@ -4,8 +4,8 @@ class Home extends Component {
   render() {
     return (
       <div>
-        <title>About | Moonpy</title>
-        About
+        <title>Product | Moonpy</title>
+        Product
       </div>
     );
   }

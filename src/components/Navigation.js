@@ -9,7 +9,7 @@ class Navigation extends Component {
           display: "flex",
           justifyContent: "space-between",
           padding: "10px",
-          marginBottom: "20px"
+          margin: "auto"
         }}
       >
         <NavLink to="/">
@@ -21,25 +21,26 @@ class Navigation extends Component {
             alt="moonpy"
           />
         </NavLink>
+
         <div
           style={{
             display: "flex",
-            justifyContent: "space-between",
-            width: "66.6%"
+            justifyContent: "flex-end"
           }}
         >
-          <NavLink className="button" to="/about">
-            About
+          <NavLink className="button" to="/product">
+            Product
           </NavLink>
+
+          <NavLink className="button" to="/about-us">
+            About us
+          </NavLink>
+
           <NavLink className="button" to="/contact">
             Contact
           </NavLink>
-          <NavLink
-            className="button highlight"
-            to="/download"
-            id="download"
-            style={{ width: "10em", textAlign: "center" }}
-          >
+
+          <NavLink className="button highlight" to="/download" id="download">
             Download
           </NavLink>
         </div>

@@ -5,26 +5,19 @@ class Contact extends Component {
 
   render() {
     return (
-      <div
-        id="contact"
-        style={{
-          display: "flex",
-          flexDirection: "column",
-          alignItems: "center",
-          textAlign: "center"
-        }}
-      >
+      <div id="contact">
         <title>Contact | Moonpy</title>
 
-        <h1>Contact Us</h1>
+        <h1 style={{ textAlign: "center" }}>Contact Us</h1>
 
         <form
-          onSubmit={() => alert("coming soon")}
+          onSubmit={() => alert("Coming soon")}
           style={{
             display: "flex",
             flexDirection: "column",
             alignItems: "stretch",
-            width: "66.6%"
+            width: "100%",
+            margin: "auto"
           }}
         >
           <input className="outline" placeholder="Name" required></input>
@@ -35,10 +28,17 @@ class Contact extends Component {
             <option value="" disabled>
               Subject
             </option>
-            <option value="Product inquiry">Product inquiry</option>
-            <option value="Unanswered Questions">Unanswered Question</option>
-            <option value="Website problem">Website problem</option>
-            <option value="Other">Other</option>
+
+            {[
+              "Product inquiry",
+              "Unanswered question",
+              "Website problem",
+              "Other"
+            ].map((option, i) => (
+              <option key={i} value={option}>
+                {option}
+              </option>
+            ))}
           </select>
 
           <textarea

@@ -3,40 +3,31 @@ import React, { Component } from "react";
 class Download extends Component {
   render() {
     return (
-      <div
-        style={{
-          display: "flex",
-          flexDirection: "column",
-          alignItems: "center"
-        }}
-      >
+      <div>
         <title>Download | Moonpy</title>
 
-        <h1>Download Moonpy</h1>
+        <h1 style={{ textAlign: "center" }}>Download Moonpy</h1>
 
-        <div style={{ width: "66.6%" }}>
-          <p>
-            Moonpy is offered in two flavors, <b>personal</b> and{" "}
-            <b>enterprise</b>.
-          </p>
-          <p>
-            For personal or academic purposes, Moonpy's free <b>personal</b>{" "}
-            version is available. It is fully-functional, however does not
-            permit for the generated code or binaries to be used outside of
-            personal or academic contexts. Online issue reporting is provided
-            through Moonpy's <b>GitHub</b>, however live support is not offered.
-          </p>
-          <p>
-            For commercial projects, Moonpy's $50/month <b>enterprise</b>{" "}
-            license is required. It allows the use of all code and binaries
-            produced by Moonpy to be used for any purpose. Along with
-            unrestricted access to generated works, the license guarantees live
-            customer support.
-          </p>
-          <p>For clarification, consult the chart below:</p>
-        </div>
+        <p>
+          Moonpy is offered in two flavors, <b>personal</b> and{" "}
+          <b>enterprise</b>.
+        </p>
+        <p>
+          For personal or academic purposes, Moonpy's free <b>personal</b>{" "}
+          version is available. It is fully-functional, however does not permit
+          for the generated code or binaries to be used outside of personal or
+          academic contexts. Online issue reporting is provided through Moonpy's{" "}
+          <b>GitHub</b>, however live support is not offered.
+        </p>
+        <p>
+          For commercial projects, Moonpy's $50/month <b>enterprise</b> license
+          is required. It allows the use of all code and binaries produced by
+          Moonpy to be used for any purpose. Along with unrestricted access to
+          generated works, the license guarantees live customer support.
+        </p>
+        <p>For clarification, consult the chart below:</p>
 
-        <table className="outline" style={{ margin: "20px" }}>
+        <table className="outline" style={{ margin: "30px auto" }}>
           <thead>
             <tr>
               <th></th>
@@ -65,43 +56,22 @@ class Download extends Component {
               <td style={{ textAlign: "center" }}>$50/month</td>
             </tr>
           </tbody>
-          {/* <tfoot>
-            <tr>
-              <td></td>
-              <td>
-                <button
-                  className="button highlight"
-                  onClick={() => alert("Coming soon")}
-                >
-                  Download Moonpy Personal
-                </button>
-              </td>
-              <td>
-                <button
-                  className="button highlight"
-                  onClick={() => alert("Coming soon")}
-                >
-                  Purchase Moonpy Enterprise
-                </button>
-              </td>
-            </tr>
-          </tfoot> */}
         </table>
 
         <p>
           After you've picked the right version for you, proceed to download:
         </p>
-        <div>
+        <div style={{ textAlign: "center" }}>
           <button
             className="button highlight"
-            style={{ margin: "0px 10px" }}
+            style={{ margin: "10px 5px" }}
             onClick={() => alert("Coming soon")}
           >
             Download Moonpy Personal
           </button>
           <button
             className="button highlight"
-            style={{ margin: "0px 10px" }}
+            style={{ margin: "10px 5px" }}
             onClick={() => alert("Coming soon")}
           >
             Purchase Moonpy Enterprise
