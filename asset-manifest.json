@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/moonpy/static/css/main.39aef9da.chunk.css",
+    "main.js": "/moonpy/static/js/main.20da00d5.chunk.js",
+    "main.js.map": "/moonpy/static/js/main.20da00d5.chunk.js.map",
+    "runtime-main.js": "/moonpy/static/js/runtime-main.d9120efc.js",
+    "runtime-main.js.map": "/moonpy/static/js/runtime-main.d9120efc.js.map",
+    "static/js/2.91b9ec68.chunk.js": "/moonpy/static/js/2.91b9ec68.chunk.js",
+    "static/js/2.91b9ec68.chunk.js.map": "/moonpy/static/js/2.91b9ec68.chunk.js.map",
+    "index.html": "/moonpy/index.html",
+    "precache-manifest.eaf8a2cdfcc0102887e54daf0d0f0da8.js": "/moonpy/precache-manifest.eaf8a2cdfcc0102887e54daf0d0f0da8.js",
+    "service-worker.js": "/moonpy/service-worker.js",
+    "static/css/main.39aef9da.chunk.css.map": "/moonpy/static/css/main.39aef9da.chunk.css.map",
+    "static/js/2.91b9ec68.chunk.js.LICENSE.txt": "/moonpy/static/js/2.91b9ec68.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.d9120efc.js",
+    "static/js/2.91b9ec68.chunk.js",
+    "static/css/main.39aef9da.chunk.css",
+    "static/js/main.20da00d5.chunk.js"
+  ]
+}
