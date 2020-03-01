@@ -1,5 +1,6 @@
 {
   "name": "moonpy",
+  "homepage": "http://benwilliamgraham.github.io/moonpy",
   "version": "0.0.1",
   "private": true,
   "dependencies": {
@@ -8,14 +9,17 @@
     "react-router-dom": "5.1.2"
   },
   "devDependencies": {
-    "react-scripts": "3.4.0",
-    "eslint": "6.8.0"
+    "eslint": "6.8.0",
+    "gh-pages": "^2.2.0",
+    "react-scripts": "3.4.0"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "lint": "eslint ./src --ext .js",
-    "lint-fix": "eslint ./src --ext .js --fix"
+    "lint-fix": "eslint ./src --ext .js --fix",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "browserslist": {
     "production": [
