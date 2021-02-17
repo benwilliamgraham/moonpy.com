@@ -1,0 +1,85 @@
+html {
+  scoll-behavior: smooth;
+}
+
+body {
+  font-family: Montserrat, sans-serif;
+  margin: 0px;
+}
+
+.content {
+  width: min(80rem, 100%);
+  margin: auto;
+}
+
+.card {
+  box-shadow: 0 2px 2px #666;
+  border-radius: 4px;
+  padding: 1rem;
+  margin: 1rem;
+  transition: 0.25s;
+}
+
+.card:hover {
+  box-shadow: 0 4px 4px #666;
+}
+
+#title {
+  padding: 10rem 1rem 10rem 1rem;
+  text-align: center;
+}
+
+#logo {
+  width: min(40rem, 100%);
+}
+
+#status {
+  background-color: #000;
+  color: #fff;
+  padding: 2rem 1rem 2rem 1rem;
+  text-align: center;
+}
+
+#what {
+  box-shadow: 0 1px 2px #666;
+  padding: 2rem 1rem 2rem 1rem;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+#what img {
+  width: 4rem;
+}
+
+.benefit-row {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+.benefit {
+  width: 20rem;
+  text-align: center;
+}
+
+#why {
+  padding: 2rem 1rem 2rem 1rem;
+}
+
+#why img {
+  width: 4rem;
+  float: left;
+  padding: 1rem;
+}
+
+.reason {
+  padding: 2rem 1rem 2rem 1rem;
+}
+
+#contact {
+  background-color: #000;
+  color: #fff;
+  padding: 2rem;
+  text-align: right;
+}
