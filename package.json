@@ -1,0 +1,35 @@
+{
+  "name": "moonpy.com",
+  "description": "Moonpy Website",
+  "keywords": [],
+  "main": "index.js",
+  "dependencies": {
+    "@material-ui/core": "latest",
+    "prettier": "^2.3.2",
+    "react": "latest",
+    "react-dom": "latest",
+    "react-router-dom": "^5.2.0",
+    "react-scripts": "latest"
+  },
+  "version": "1.0.0",
+  "scripts": {
+    "format": "prettier --write '{,!(node_modules)/**/}*.{js,html,json}'",
+    "start": "react-scripts start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/benwilliamgraham/moonpy.com.git"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
