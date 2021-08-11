@@ -10,11 +10,11 @@ import { makeStyles } from "@material-ui/core";
 import { useTheme } from "@material-ui/core/styles";
 
 const useStyles = makeStyles((theme) => ({
-  banner: { backgroundColor: theme.palette.primary.light, padding: "2em" },
-  what: { backgroundColor: theme.palette.primary.main, padding: "2em" },
-  why: { backgroundColor: theme.palette.secondary.dark, padding: "2em" },
+  banner: { backgroundColor: theme.palette.secondary.dark, padding: "2em" },
+  what: { backgroundColor: theme.palette.primary.light, padding: "2em" },
+  why: { backgroundColor: theme.palette.primary.main, padding: "2em" },
   pitch: { backgroundColor: theme.palette.primary.light, padding: "2em" },
-  benefit: { backgroundColor: theme.palette.secondary.dark },
+  benefit: { backgroundColor: theme.palette.primary.light },
 }));
 
 export default function Home() {
@@ -33,20 +33,20 @@ export default function Home() {
           <Grid item xs={12} sm={10} md={7} lg={6}>
             <img
               src={process.env.PUBLIC_URL + "/images/banner.svg"}
-              style={{ width: "100%" }}
+              style={{ width: "100%", borderRadius: "2em" }}
             />
           </Grid>
           <Grid item xs={12} sm={10} md={7} lg={6}>
-            <Typography gutterBottom variant="h2" color="textPrimary">
+            <Typography gutterBottom variant="h2" color="textSecondary">
               Out-of-this-world Python performance.
             </Typography>
-            <Typography gutterBottom variant="h4" color="textPrimary">
+            <Typography gutterBottom variant="h4" color="textSecondary">
               High-speed, mutli-platform Python without compromise.
             </Typography>
             <div style={{ textAlign: "center", padding: "2em" }}>
               <Button
                 variant="contained"
-                color="secondary"
+                color="primary"
                 onClick={() => history.push("get-moonpy")}
               >
                 Try Moonpy
@@ -89,7 +89,7 @@ export default function Home() {
         </Typography>
         <Grid container spacing={2} justifyContent="center">
           {features.map((feature) => (
-            <Grid item xs={12} sm={10} md={6} lg={3}>
+            <Grid item xs={12} sm={10} md={6} lg={6}>
               <Card>
                 <CardContent style={{ textAlign: "center" }}>
                   <img src={feature.icon} style={{ height: "4em" }} />
@@ -104,6 +104,7 @@ export default function Home() {
             </Grid>
           ))}
         </Grid>
+        <br />
         <Typography paragraph variant="body1" color="textPrimary">
           Moonpy is a Python distribution that allows for rapid code development
           without sacrificing performance. By dramatically increasing the
@@ -120,19 +121,19 @@ export default function Home() {
     {
       tagline: "Increase productivity.",
       description:
-        "Get the full benefit of developing with Python without any of the speed and memory constraints that come with it",
+        "Get the full benefit of developing with Python without any of the speed and memory constraints that come with it.",
       icon: process.env.PUBLIC_URL + "/images/productivity.png",
     },
     {
       tagline: "Compute at the edge.",
       description:
-        "Open up new doors for localized artificial intelligence, data science, and IoT devices",
+        "Open up new doors for localized artificial intelligence, data science, and IoT devices.",
       icon: process.env.PUBLIC_URL + "/images/edge.png",
     },
     {
       tagline: "Save on resources.",
       description:
-        "Cut costs on both hardware and electricity without changing your codebase",
+        "Cut costs on both hardware and electricity without changing your codebase.",
       icon: process.env.PUBLIC_URL + "/images/resources.png",
     },
   ];
@@ -140,32 +141,66 @@ export default function Home() {
   const why = (
     <div className={classes.why}>
       <Container>
-        <Typography paragraph variant="h3" color="textSecondary">
+        <Typography paragraph variant="h3" color="textPrimary">
           Why Moonpy?
         </Typography>
-        <Grid container spacing={2} justifyContent="center">
-          <Grid container item xs={12} sm={10} md={6} lg={6} spacing={2} justifyContent="center">
+        <Grid container spacing={4} justifyContent="center">
+          <Grid
+            container
+            item
+            xs={12}
+            sm={10}
+            md={6}
+            lg={6}
+            spacing={2}
+            justifyContent="center"
+          >
             {benefits.map((benefit) => (
               <Grid item xs={12} sm={12} md={12} lg={12}>
                 <Card className={classes.benefit} elevation={2}>
                   <CardContent>
                     <Grid container spacing={2} justifyContent="center">
                       <Grid item xs={4} sm={4} md={4} lg={4}>
-                        <div style={{ display: "flex", justifyContent: "center", alignItems: "center", height: "100%" }}>
-                          <img src={benefit.icon} style={{ height: "4em" }} />
+                        <div
+                          style={{
+                            display: "flex",
+                            justifyContent: "center",
+                            alignItems: "center",
+                            height: "100%",
+                          }}
+                        >
+                          <img
+                            src={benefit.icon}
+                            style={{
+                              height: "4em",
+                              paddingTop: "2em",
+                              paddingBottom: "2em",
+                            }}
+                          />
                         </div>
                       </Grid>
                       <Grid item xs={12} sm={12} md={8} lg={8}>
-                        <Typography
-                          gutterBottom
-                          variant="h4"
-                          color="textSecondary"
+                        <div
+                          style={{
+                            display: "flex",
+                            justifyContent: "center",
+                            alignItems: "center",
+                            height: "100%",
+                          }}
                         >
-                          {benefit.tagline}
-                        </Typography>
-                        <Typography variant="body1" color="textSecondary">
-                          {benefit.description}
-                        </Typography>
+                          <div>
+                            <Typography
+                              gutterBottom
+                              variant="h4"
+                              color="textPrimary"
+                            >
+                              {benefit.tagline}
+                            </Typography>
+                            <Typography variant="subtitle1" color="textPrimary">
+                              {benefit.description}
+                            </Typography>
+                          </div>
+                        </div>
                       </Grid>
                     </Grid>
                   </CardContent>
@@ -174,7 +209,7 @@ export default function Home() {
             ))}
           </Grid>
           <Grid item xs={12} sm={12} md={6} lg={6}>
-            <Typography paragraph variant="body1" color="textSecondary">
+            <Typography paragraph variant="body1" color="textPrimary">
               These new features make Moonpy a great choice for developers and
               companies alike. Using Moonpy dramatically reduces the amount of
               time and work that goes into the development of an application,
@@ -188,7 +223,7 @@ export default function Home() {
               both hardware and electricity without requiring any changes to the
               codebase.
             </Typography>
-            <Typography paragraph variant="body1" color="textSecondary">
+            <Typography paragraph variant="body1" color="textPrimary">
               Moonpy also opens up many new opportunities to use the Python
               programming language. Because of its increased speed and lower
               memory overhead, Python can now be used efficiently for many small

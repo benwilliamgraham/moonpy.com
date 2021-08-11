@@ -1,6 +1,6 @@
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Home from "./pages/Home.js";
-import Examples from "./pages/Examples.js";
+import Performance from "./pages/Performance.js";
 import AboutUs from "./pages/AboutUs.js";
 import GetMoonpy from "./pages/GetMoonpy.js";
 import NotFound from "./pages/NotFound.js";
@@ -41,8 +41,8 @@ const theme = createMuiTheme({
       fontSize: "1.2em",
     },
     subtitle1: {
-      fontSize: "1em"
-    }
+      fontSize: "1em",
+    },
   },
 });
 
@@ -53,7 +53,7 @@ function App() {
         <Layout>
           <Switch>
             <Route exact path="/" component={Home} />
-            <Route exact path="/examples" component={Examples} />
+            <Route exact path="/performance" component={Performance} />
             <Route exact path="/about-us" component={AboutUs} />
             <Route exact path="/get-moonpy" component={GetMoonpy} />
             <Route component={NotFound} />

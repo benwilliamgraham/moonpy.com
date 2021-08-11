@@ -5,6 +5,7 @@
   "main": "index.js",
   "dependencies": {
     "@material-ui/core": "latest",
+    "@material-ui/icons": "^4.11.2",
     "prettier": "^2.3.2",
     "react": "latest",
     "react-dom": "latest",

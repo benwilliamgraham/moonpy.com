@@ -15,7 +15,7 @@ const useStyles = makeStyles((theme) => ({
 const messages = [
   "Benjamin Graham - benwilliamgraham@gmail.com",
   "Copyright © 2021 Beneficium, LLC.",
-  "All right reserved.",
+  "All rights reserved.",
 ];
 
 export default function Footer() {

@@ -66,6 +66,24 @@ export default function AboutUs() {
               </Grid>
             ))}
           </Grid>
+          <br />
+          <br />
+          <Typography gutterBottom variant="body1" color="textPrimary">
+            Benjamin Graham, the founder of Moonpy, is a senior in Electrical
+            and Computer Engineering at Carnegie Mellon University. During one
+            of his internships, Ben was tasked with translating prototype Python
+            code to C for use on an embedded device. This, along with first-hand
+            experience from other personal projects, highlighted the tradeoff
+            between development speed and runtime performance and inspired him
+            to begin the development of a language that could blend the ease of
+            Python with the speed of C. After several months of development, Ben
+            had the realization that many of the novel optimization techniques
+            he developed could also be applied to unaltered Python, at which
+            point he pivoted and began the development of Moonpy. For the past
+            year and a half, Ben has spent his free time working on both the
+            technological and business aspects of the distribution, and he can't
+            wait to share his technology with the world.
+          </Typography>
         </Container>
       </div>
       <div className={classes.jobs}>

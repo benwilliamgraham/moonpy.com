@@ -4,8 +4,16 @@ import Typography from "@material-ui/core/Typography";
 import Button from "@material-ui/core/Button";
 
 export default function GetMoonpy() {
-  return (<div>
-      <Container style={{textAlign:"center", padding: "2em", paddingTop: "8em", paddingBottom: "8em"}}>
+  return (
+    <div>
+      <Container
+        style={{
+          textAlign: "center",
+          padding: "2em",
+          paddingTop: "8em",
+          paddingBottom: "8em",
+        }}
+      >
         <Typography gutterBottom variant="h3" color="textPrimary">
           Moonpy 0.9.1-Beta.
         </Typography>
@@ -24,5 +32,6 @@ export default function GetMoonpy() {
           Get in Touch
         </Button>
       </Container>
-    </div>);
+    </div>
+  );
 }
