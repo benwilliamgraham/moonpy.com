@@ -3,7 +3,7 @@
   "description": "Moonpy Website",
   "keywords": [],
   "main": "index.js",
-  "homepage": "https://benwilliamgraham.github.io/react-gh-pages",
+  "homepage": "https://moonpy.com",
   "dependencies": {
     "@material-ui/core": "latest",
     "@material-ui/icons": "^4.11.2",
