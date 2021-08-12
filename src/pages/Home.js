@@ -29,6 +29,7 @@ export default function Home() {
           spacing={2}
           direction="row-reverse"
           justifyContent="center"
+          alignItems="center"
         >
           <Grid item xs={12} sm={10} md={7} lg={6}>
             <img
@@ -249,7 +250,7 @@ export default function Home() {
         </Typography>
         <div style={{ textAlign: "center", backgroundColor: "#000" }}>
           <iframe
-            width="560"
+            width="100%"
             height="315"
             src="https://www.youtube.com/embed/CN4URQYR0IQ"
             title="YouTube video player"

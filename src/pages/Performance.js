@@ -9,7 +9,7 @@ export default function Performance() {
       <Typography gutterBottom variant="h3" color="textPrimary">
         How Moonpy compares to CPython:
       </Typography>
-      <div style={{ textAlign: "center" }}>
+      <div style={{ textAlign: "center", overflow: "auto" }}>
         <iframe
           width="691"
           height="428"
@@ -33,12 +33,11 @@ export default function Performance() {
       <br />
       <br />
       <Typography gutterBottom variant="body1" color="textPrimary">
-        vpZBT3LjZocpJ1n rnTO9J4TBxXZL8wk F16Yc2i6aPNapKI0 k03JlBWkdyatflfEQ
-        vpZBT3LjZocpJ1n rnTO9J4TBxXZL8wk F16Yc2i6aPNapKI0 k03JlBWkdyatflfEQ
-        vpZBT3LjZocpJ1n rnTO9J4TBxXZL8wk F16Yc2i6aPNapKI0 k03JlBWkdyatflfEQ
-        vpZBT3LjZocpJ1n rnTO9J4TBxXZL8wk F16Yc2i6aPNapKI0 k03JlBWkdyatflfEQ
-        vpZBT3LjZocpJ1n rnTO9J4TBxXZL8wk F16Yc2i6aPNapKI0 k03JlBWkdyatflfEQ
-        vpZBT3LjZocpJ1n rnTO9J4TBxXZL8wk F16Yc2i6aPNapKI0 k03JlBWkdyatflfEQ.
+        Moonpy is able to run Python code extremely efficiently without
+        compromising any of its features. Being an independent distribution,
+        Moonpy is not hampered by the limitations of CPython. Its combination of
+        ahead-of-time compiler, novel data-oriented runtime, and expanded C/C++
+        interface make Moonpy a one-of-a-kind programming environment.
       </Typography>
     </Container>
   );
