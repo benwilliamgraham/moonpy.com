@@ -42,7 +42,7 @@ export default function Home() {
               Out-of-this-world Python performance.
             </Typography>
             <Typography gutterBottom variant="h4" color="textSecondary">
-              High-speed, mutli-platform Python without compromise.
+              High-speed, multi-platform Python without compromise.
             </Typography>
             <div style={{ textAlign: "center", padding: "2em" }}>
               <Button
@@ -247,6 +247,10 @@ export default function Home() {
       <Container>
         <Typography gutterBottom variant="h3" color="textPrimary">
           Watch the pitch:
+        </Typography>
+        <Typography paragraph variant="body1" color="textPrimary">
+          See Moonpy's first-prize entry to CMU's 2021 Mcginnis Venture
+          Competition.
         </Typography>
         <div style={{ textAlign: "center", backgroundColor: "#000" }}>
           <iframe
