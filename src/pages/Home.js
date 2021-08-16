@@ -13,6 +13,7 @@ const useStyles = makeStyles((theme) => ({
   banner: { backgroundColor: theme.palette.secondary.dark, padding: "2em" },
   what: { backgroundColor: theme.palette.primary.light, padding: "2em" },
   why: { backgroundColor: theme.palette.primary.main, padding: "2em" },
+  how: { backgroundColor: theme.palette.secondary.dark, padding: "2em" },
   pitch: { backgroundColor: theme.palette.primary.light, padding: "2em" },
   benefit: { backgroundColor: theme.palette.primary.light },
 }));
@@ -242,6 +243,22 @@ export default function Home() {
     </div>
   );
 
+  const how = (
+    <div className={classes.how}>
+      <Container>
+        <Typography gutterBottom variant="h3" color="textSecondary">
+          How does Moonpy work?
+        </Typography>
+        <div style={{ textAlign: "center" }}>
+          <img
+            src="https://docs.google.com/drawings/d/e/2PACX-1vTwwIElE_8IEJTQZTSAaGBIOK1qAmU3nUNdeXfBLFzqmyop3kw9iopUvad-ox8FDJUuDY1r8hC550tj/pub?w=1065&amp;h=1129"
+            style={{ width: "100%", maxWidth: "800px" }}
+          />
+        </div>
+      </Container>
+    </div>
+  );
+
   const pitch = (
     <div className={classes.pitch}>
       <Container>
@@ -278,6 +295,7 @@ export default function Home() {
       {banner}
       {what}
       {why}
+      {how}
       {pitch}
     </div>
   );
